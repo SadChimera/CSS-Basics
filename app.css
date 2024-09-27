@@ -1,5 +1,7 @@
 /* Demo CSS */
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+</style>
 /*
 ----------------------------------------
 CSS Order of operations:
@@ -10,15 +12,58 @@ CSS Order of operations:
 */
 
 /* Inline vs Block Elements */
+body {
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-color: normal;
+}
+header > nav {
+    background-color: black;
+    padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    
+}
+
+nav > a{
+    background-color: yellow;
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    color: black;
+    text-decoration: none;
+    /* transition: all ease 500em; */
+    transition-duration: 250ms;
+    transition-property: color, background-color;
+    transition-delay: 0ms;
+    transition-timing-function: ease;
+}
+
+nav > a:hover {
+    background-color: aqua;
+    color: red;
+}
+
+header > a{
+    background-color: red;
+}
+
 h1 {
-    background-color: blue;
+    display: inline-black;
+    background-color: aqua;
+}
+
+
+/* ID Selection */
+#main-content {
+    background-color: lightgray;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 1em;
 }
 
 
 
-/* Cascade Theory */
+/* Class selection */
 
-
-
-
-/* Selector Specificity */
